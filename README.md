@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+**Descrizione**
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Dobbiamo creare una web-app che permetta di leggere e scrivere una lista di Todo.
 
-## Recommended IDE Setup
+Deve essere anche gestita la persistenza dei dati leggendoli da, e scrivendoli in un file JSON.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+**Bonus**
+
+-Mostrare lo stato del task → se completato, barrare il testo
+
+-Permettere di segnare un task come completato facendo click sul testo
+
+-Permettere il toggle del task (completato/non completato)
+
+-Abilitare l’eliminazione di un task
