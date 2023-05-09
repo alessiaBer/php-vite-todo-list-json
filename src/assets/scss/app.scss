@@ -1,1 +1,14 @@
-@use '/node_modules/bootstrap/scss/bootstrap.scss' as *;
+@use "/node_modules/bootstrap/scss/bootstrap.scss" as *;
+
+.container {
+  width: 50%;
+  .done {
+    text-decoration: line-through;
+  }
+  .icon {
+    color: white;
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+}
