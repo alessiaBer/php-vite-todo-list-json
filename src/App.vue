@@ -5,9 +5,9 @@ export default {
     return {
       tasks: null,
       newTask: "",
-      apiUrl: "http://localhost:8888/app/Http/Controllers/TasksController/",
+      apiUrl: "http://localhost:8888/PHP/php-todo-list-json/app/Http/Controllers/TaskController/",
       apiGet:
-        "http://localhost:8888/app/Http/Controllers/TasksController/index.php",
+        "http://localhost:8888/PHP/php-todo-list-json/app/Http/Controllers/TaskController/index.php",
       apiPost: "store.php",
       apiDelete: "delete.php",
       apiToggleDone: "toggle.php",
@@ -21,7 +21,7 @@ export default {
       };
 
       axios
-        .post(this.apiUrl + this.apiPost, data, {
+        .post(api, data, {
           headers: { "Content-Type": "multipart/form-data" },
         })
         .then((response) => {
@@ -30,6 +30,7 @@ export default {
         .catch((error) => {
           console.error(error.message);
         });
+        this.newTask = ""
     },
     toggleDone(index) {
       const api = `${this.apiUrl + this.apiToggleDone}`;
@@ -105,7 +106,7 @@ export default {
         class="form-control"
         placeholder="Add new task"
         v-model="newTask"
-        @keyup.enter="addTask(), (newTask = '')"
+        @keyup.enter="addTask()"
       />
     </div>
     <!-- /.input-group-->
